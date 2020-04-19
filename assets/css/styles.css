@@ -1,0 +1,201 @@
+
+.navigation {
+  position: relative;
+  background-color: #00425e;
+  text-align: end;
+  color: #F8F8F8;
+ 
+  
+}
+
+.navigation__logo {
+  position: absolute;
+  top: 0.2em;
+  right: 2em;
+  font-family: "Liu Jian Mao Cao", cursive;
+  font-size: 2em;
+}
+
+.collapsible {
+  text-align: right;
+}
+
+label {
+  display: block;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-right: 3em;
+  font-size: 1.8rem;
+}
+
+#menu {
+  display: none;
+}
+
+input:checked ~ .navigation__container {
+  max-height: 100%;
+}
+
+.navigation__container {
+  max-height: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation__list {
+  list-style: none;
+}
+
+.navigation__item a {
+  display: block;
+  text-align: left;
+  padding: 0.5em;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #F8F8F8;
+  text-decoration: none;
+}
+.navigation__item a:hover {
+  color: #00ADEF;
+}
+
+@media only screen and (min-width: 992px) {
+  .navigation__logo {
+    top: 1em;
+    left: 3em;
+  }
+
+  .collapsible label {
+    display: none;
+  }
+
+  .navigation__container {
+    max-height: 100%;
+    padding: 0.5em 3em 0.5em 0;
+    overflow: visible;
+  }
+
+  .navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: inherit;
+    padding: inherit;
+  }
+
+  .navigation__item a {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+.datos {
+  background-color: #dbdcdf;
+}
+
+.datos__iconos {
+  list-style: none;
+  padding-left: 3em;
+  color: #3484da;
+}
+
+
+.formulario {
+  background-color: #00425e;
+  text-align: left;
+  color: #F8F8F8;
+}
+.ventana{
+  position: relative;
+}
+
+.overlay {
+	background: rgba(0,0,0,.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	align-items: center;
+	justify-content: center;
+  display: flex;
+  z-index: 100;
+  visibility: hidden;
+
+}
+.overlay.active {
+	visibility: visible;
+}
+.popup {
+	background: #F8F8F8;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.3);
+	border-radius: 7px;
+	text-align: center;
+  width:80%;
+  transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+ 
+}
+.btn-submit {
+	padding: 0 20px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #5E7DE3;
+border-radius: 8px;
+}
+.btn-cerrar-popup {
+	font-size: 16px;
+	line-height: 16px;
+	display: block;
+	text-align: right;
+	transition: .3s ease all;
+	color: #BBBBBB;
+}
+
+.popup.active {	transform: scale(1); opacity: 1; }
+
+
+
+.card2{
+  border-top: 5px solid #fe723f;
+  text-align: center;
+  color: #fe723f;
+  
+}
+.bg-pop{
+background-color:  #fe723f;
+}
+.carta-pago {
+ 
+  background: #ededed;
+ 
+}
+.cartas{
+  background:#fdcdb6;
+}
+.list-group-item{
+
+  border: 2px solid #57beb9;
+}
+body{
+  font-family: roboto;
+}
+.pagado{
+  padding-top: 70%;
+  width: 90%
+
+}
+.pagado-titulo{
+  text-align: center;
+  
+}
+.formulario-inicio{
+  background-color: #00425e;
+}
+.modal-pago{
+  width: 90%;
+}
+.popuppago.active {	transform: scale(1); opacity: 1; }
